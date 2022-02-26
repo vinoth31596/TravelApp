@@ -1,0 +1,23 @@
+{
+  "name": "assignment-4-vinoth-mani",
+  "version": "1.0.0",
+  "description": "Student info:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/assignment-4-Vinoth-Mani.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/assignment-4-Vinoth-Mani/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/assignment-4-Vinoth-Mani#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}

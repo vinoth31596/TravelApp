@@ -1,0 +1,63 @@
+@import 'variables.scss';
+
+
+.button{
+    border: none;
+    color: $white-button-color;
+    font-size: 16px;
+    cursor: pointer;
+}
+    /* CTA button properties */
+.CTAButton{
+    @extend .button;
+    background-color: $blue-button-color; /* Green */
+    border-radius: 25px;
+    width: 350px;
+    height: 50px;
+}
+/* blue round button properties */
+.blueRoundedButton{
+    @extend .button;
+    background-color: $blue-button-color; /* Green */
+    border-radius: 18px;
+    width: 100px;
+    height: 35px;
+}
+/* 
+form square button properties for form  */
+.formSquareButton{
+    @extend .button;
+    background-color: $blue-button-color; /* Green */
+    font-size: 20px;
+    border-radius: 4px;
+    width: 240px;
+    height: 45px;
+}
+/* view round button property  */
+.viewRoundButton{
+    @extend .button;
+    background-color: $blue-button-color; /* Green */
+    font-size: 30px;
+    border-radius: 25px;
+    width: 350px;
+    height: 50px;
+}
+/* green rounded button property */
+.greenRoundedButton{
+    @extend .button;
+    background-color: $green-button-color;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    
+}
+// White round button
+.whiteRoundButton{
+    @extend .button;
+    background-color: $white-button-color;
+    color: $color-bg;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+}

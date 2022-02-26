@@ -1,0 +1,84 @@
+@import 'variables.scss';
+
+// footWrapper
+@mixin footWrapper() {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: $white-button-color;
+}
+// header Image Wrapper
+@mixin imgWrapper(){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: $white-button-color;
+    z-index: 100;
+  }
+
+//   Scroll Main Wrapper
+  @mixin scrollMainWrapper(){
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 25px + 25px;
+    margin-left: 50px * 2;
+  }
+
+ @mixin wrapper() {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 150px - 50px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  /* grid layout default wrapper and corresponding grid layout */
+ @mixin selectWrapper(){
+    border-radius:4px;
+    display:inline-block;
+    overflow:hidden;
+    border:0.5px solid $whitegraydarl-color;
+    width:205px * 2;
+    height:20px * 2;
+    outline:none;
+    box-shadow: 1px 1px 1px $gray-color;
+  }
+
+  //Form Wrapper
+
+ @mixin formWrapper() {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+// Container Wrapper 
+
+ @mixin container() {
+    float: $right-align;
+    position: $relative-position;
+    text-align: $center-align;
+    width: 400px + 400px;
+    height: 400px + 400px;
+}
+
+  //form elemenent properties and rounded corner properties
+ @mixin formRoundCorner() {
+    border-radius: 35px;
+    background: $whitesmoke-color;
+    height: 250px + 200px;
+    width: 250px + 200px;
+    border: .1px solid $foot-00a88f-bg-color;
+    box-shadow: 5px 5px 7px $foot-00a88f-bg-color;
+  }
+
+  // Slide Box Wrapper
+ @mixin slideBox(){
+    border-radius: 5px;
+      background: $white-button-color;
+      height: 80px+80px;
+      width: 80px+80px;
+      float: left;
+      margin-left: 50px;
+      box-shadow: 5px 5px 2.5px $gray-color;
+  }

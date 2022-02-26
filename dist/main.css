@@ -1,0 +1,405 @@
+.button, .whiteRoundButton, .greenRoundedButton, .viewRoundButton, .formSquareButton, .blueRoundedButton, .CTAButton {
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CTA button properties */
+.CTAButton {
+  background-color: #0054a6;
+  /* Green */
+  border-radius: 25px;
+  width: 350px;
+  height: 50px;
+}
+
+/* blue round button properties */
+.blueRoundedButton {
+  background-color: #0054a6;
+  /* Green */
+  border-radius: 18px;
+  width: 100px;
+  height: 35px;
+}
+
+/* 
+form square button properties for form  */
+.formSquareButton {
+  background-color: #0054a6;
+  /* Green */
+  font-size: 20px;
+  border-radius: 4px;
+  width: 240px;
+  height: 45px;
+}
+
+/* view round button property  */
+.viewRoundButton {
+  background-color: #0054a6;
+  /* Green */
+  font-size: 30px;
+  border-radius: 25px;
+  width: 350px;
+  height: 50px;
+}
+
+/* green rounded button property */
+.greenRoundedButton {
+  background-color: #00a88f;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+}
+
+.whiteRoundButton {
+  background-color: white;
+  color: green;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* grid layout default wrapper and corresponding grid layout */
+.footWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: white;
+}
+.footWrapper .footerOne {
+  grid-column: 2;
+  grid-row: 2/9;
+}
+.footWrapper .footerTwo {
+  grid-column: 3/6;
+  grid-row: 2/9;
+  margin-left: 50px;
+}
+.footWrapper .footThree {
+  grid-column: 5;
+  grid-row: 2/9;
+}
+.footWrapper .footFour {
+  grid-column: 1/10;
+  grid-row: 10;
+  background: #028d78;
+}
+.footWrapper .footFive {
+  grid-column: 5;
+  grid-row: 10;
+}
+
+.footBGColor {
+  grid-column: 1/10;
+  grid-row: 2/10;
+  background-color: #00a88f;
+}
+
+.footHeader {
+  grid-column: 1/10;
+  grid-row: 1;
+  margin-left: 50px;
+}
+
+.footFullBGColor {
+  background: #00a88f;
+}
+
+.headerImgWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 100;
+}
+.headerImgWrapper .headerOne {
+  grid-column: 1;
+  grid-row: 1/10;
+  margin-left: 50px;
+}
+.headerImgWrapper .headerTwo {
+  grid-column: 8/10;
+  grid-row: 1/10;
+  text-align: right;
+}
+
+.scrollMainWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 50px;
+  margin-left: 100px;
+}
+.scrollMainWrapper .scrollMainWrapper1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.scrollMainWrapper .scrollMainWrapper2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.scrollMainWrapper .scrollMainWrapper3 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.scrollMainWrapper .scrollBostonImg {
+  margin-left: 10px;
+  height: 150px;
+  width: 270px;
+}
+.scrollMainWrapper .scrollTxt {
+  grid-column: 1/6;
+  grid-row: 2;
+  margin-left: 20px;
+  color: #646464;
+}
+.scrollMainWrapper .moneyColor {
+  color: #16af98;
+  font-weight: bold;
+}
+.scrollMainWrapper .scrollWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: white;
+}
+.scrollMainWrapper .scrollBorderRound {
+  border-radius: 35px;
+  background: #FEFFFF;
+  height: 250px;
+  width: 300px;
+  box-shadow: 5px 5px 7px gray;
+}
+.scrollMainWrapper .scrollRoundBorder {
+  border-radius: 35px;
+}
+.scrollMainWrapper .scrollImg {
+  float: right;
+  height: 50px;
+  width: 80px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper .one {
+  grid-column: 2;
+  grid-row: 1;
+}
+.wrapper .two {
+  margin-top: 50px;
+  grid-column: 6;
+  grid-row: 1;
+}
+.wrapper .three {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+.wrapper .four {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.selectWrapper {
+  border-radius: 4px;
+  display: inline-block;
+  overflow: hidden;
+  border: 0.5px solid #cccccc;
+  width: 410px;
+  height: 40px;
+  outline: none;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.formWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.formPosition {
+  grid-column: 2/6;
+  grid-row: 1;
+  z-index: 2;
+}
+
+.learnmorePosition {
+  grid-column: 6/12;
+  grid-row: 1;
+}
+
+.imgLeft {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.imgRight {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: -100px;
+}
+
+.arrowPosition {
+  grid-column: 6;
+  grid-row: 1;
+}
+
+.navBar {
+  margin-left: 1200px;
+}
+
+.container {
+  float: right;
+  position: relative;
+  text-align: center;
+  width: 800px;
+  height: 800px;
+}
+
+.containerImgWid {
+  width: 100%;
+}
+
+.formtextColor {
+  color: black;
+}
+
+.formRoundCorner {
+  border-radius: 35px;
+  background: whitesmoke;
+  height: 450px;
+  width: 450px;
+  border: 0.1px solid #00a88f;
+  box-shadow: 5px 5px 7px #00a88f;
+}
+
+/* slide view properties with slide boc view properties */
+.slideView {
+  border-radius: 5px;
+  background: #f4f7fa;
+  height: 215px;
+}
+
+.slideBox {
+  border-radius: 5px;
+  background: white;
+  height: 160px;
+  width: 160px;
+  float: left;
+  margin-left: 50px;
+  box-shadow: 5px 5px 2.5px gray;
+}
+
+.recImg {
+  background-image: url(/assets/Rectangle\ 113.png);
+}
+
+.textLeftAlignment {
+  text-align: left;
+}
+
+.textRightAlignment {
+  text-align: right;
+}
+
+.textCenterAlignment {
+  text-align: center;
+}
+
+.leftFloat {
+  float: left;
+}
+
+.rightFloat {
+  float: right;
+}
+
+/* grid layout default wrapper and corresponding grid layout */
+/* logo customisation */
+.ukLogo {
+  width: 25px;
+  height: 25px;
+  padding-left: 15px;
+}
+
+.boldText {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  word-spacing: 7px;
+}
+.boldText:hover {
+  color: #0054a6;
+}
+
+.divRecImg {
+  background-image: url(/assets/Rectangle\ 109.png);
+  color: whitesmoke;
+  margin-top: 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.detailText {
+  font-size: larger;
+  color: aliceblue;
+}
+
+.blueBold {
+  color: #0054a6;
+  font-size: larger;
+}
+
+.logoShadow {
+  text-shadow: white;
+  width: 350px;
+  height: 90px;
+}
+
+.lineWhite {
+  width: 300px;
+  border-bottom: 1px solid white;
+}
+
+.applinkImg {
+  width: 250px;
+}
+
+.txtWhite {
+  color: white;
+  text-decoration: none;
+}
+
+div {
+  margin-top: 15px;
+}
+
+body {
+  margin-left: 32px;
+  margin-right: 40px;
+  background-color: white;
+}
+
+/* added h1 & h3 properties */
+.h1h3 h1 h3 {
+  text-shadow: 2px 2px 5px black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h6 {
+  color: #a5a3a1;
+}
+
+/*# sourceMappingURL=main.css.map */

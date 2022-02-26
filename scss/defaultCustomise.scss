@@ -1,0 +1,69 @@
+@import 'variables.scss';
+
+
+/* logo customisation */
+.ukLogo{
+    width: 25px;
+    height: 25px;
+    padding-left: 15px;
+ }
+ 
+ // text property for weight bold
+ .boldText{
+     font-weight: bold;
+     color: $black-color;
+     text-decoration: none;
+     word-spacing: 7px;
+     &:hover {
+        color: $blue-button-color;
+      }
+ } 
+
+ //simple function for returning white color button
+ @function whiteButtonColor(){
+    @return $white-button-color;
+ }
+ .divRecImg{
+    background-image: url(/assets/Rectangle\ 109.png);
+    color: $whitesmoke-color;
+    margin-top: 30px;
+
+ }
+ 
+ .centered {
+     position: $absolute-position;
+     top: 15%;
+     left: 10%;
+   }
+ .detailText{
+     font-size: larger;
+     color: $aliceblue-color;
+ }
+ 
+ .blueBold{
+     color: $blue-button-color;
+     font-size: larger;
+ }
+ 
+ // border shadow elements property
+   .logoShadow{
+       text-shadow: whiteButtonColor();
+       width: 350px;
+       height: 90px;
+   }
+ 
+   .lineWhite{
+     width: 300px;
+     border-bottom: 1px solid whiteButtonColor();
+   }
+ 
+   .applinkImg{
+    width: 250px;
+   }
+ 
+   .txtWhite{
+       color: whiteButtonColor();
+       text-decoration: none;
+   }
+ 
+ 

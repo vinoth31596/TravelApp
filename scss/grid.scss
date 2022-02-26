@@ -1,0 +1,220 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+
+// Footer Section 
+
+.footWrapper{
+    @include footWrapper;
+
+    .footerOne{
+        grid-column: 2;
+        grid-row: 2/9;
+    }
+    .footerTwo{
+      grid-column: 3/6;
+      grid-row: 2/9;
+     margin-left: 50px;
+    }
+    .footThree{
+      grid-column: 5;
+      grid-row: 2/9;
+    }
+    .footFour{
+      grid-column: 1/10;
+      grid-row: 10;
+      background: $foot-028d78-color;
+    }
+    .footFive{
+        grid-column: 5;
+        grid-row: 10;
+      
+      }
+  }
+.footBGColor{
+    grid-column: 1/10;
+    grid-row: 2/10;
+    background-color: $foot-00a88f-bg-color;
+}
+.footHeader{
+    grid-column: 1/10;
+    grid-row: 1;
+    margin-left: 50px;
+}
+
+.footFullBGColor{
+background: $foot-00a88f-bg-color;
+}
+
+// Header Section
+.headerImgWrapper{
+    @include imgWrapper();
+
+    .headerOne{
+        grid-column: 1;
+        grid-row: 1/10;
+        margin-left: 50px;
+    }
+    
+    .headerTwo{
+      grid-column: 8/10;
+      grid-row: 1/10;
+      text-align: right;
+    }
+}
+
+// Scroll section using for loop
+.scrollMainWrapper{
+    @include scrollMainWrapper();
+
+    @for $i from 1 through 3 {
+    
+        .scrollMainWrapper#{$i} {
+            grid-column: nth($scroll-grid-column, $i);
+            grid-row: nth($scroll-grid-row, $i)
+      }
+    }  
+      .scrollBostonImg{
+        margin-left: 10px;
+        height: 150px;
+        width: 270px;
+      }
+      
+        .scrollTxt{
+          grid-column: 1/6;
+          grid-row: 2;
+          margin-left: 20px;
+          color: #646464;
+        }
+        .moneyColor{
+          color: #16af98;
+          font-weight: bold;
+        }
+
+        // Scroll Image view 
+.scrollWrapper{
+    @include footWrapper();
+  }
+
+  .scrollBorderRound{
+
+    border-radius: 35px;
+    background:#FEFFFF;
+    height: 250px;
+    width: 300px;
+    box-shadow: 5px 5px 7px gray
+  }
+.scrollRoundBorder{
+  border-radius: 35px;
+}
+  .scrollImg{
+float: $right-align;
+height: 50px;
+width: 80px;
+  }
+}
+
+  // Wrapper Grid center page 
+
+  .wrapper {
+      @include wrapper();
+
+      .one {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .two {
+        margin-top: 50px;
+        grid-column: 6;
+        grid-row: 1;
+      }
+    
+      .three{
+        grid-column: 2/4;
+        grid-row: 2;
+      }
+    
+      .four{
+        grid-column: 6;
+        grid-row: 2;
+      }
+  }
+
+  
+
+
+  // Select Button Wrapper and Form Grid Layout
+
+  .selectWrapper{
+      @include selectWrapper();
+  }
+
+  .formWrapper{
+      @include formWrapper();
+  }
+
+  .formPosition{
+    grid-column: 2/6;
+    grid-row: 1;
+    z-index: 2;
+  }
+  .learnmorePosition{
+    grid-column: 6/12;
+    grid-row: 1;
+  }
+
+
+  .imgLeft{
+    grid-column: 1;
+    grid-row: 1;
+
+  }
+  .imgRight{
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: -100px;
+  }
+
+  .arrowPosition{
+    grid-column: 6;
+    grid-row: 1;
+  }
+
+  .navBar{
+    margin-left: 600px * 2;
+  }
+
+  // Container wrapper 
+
+  .container{
+      @include container();
+  }
+
+  .containerImgWid{
+    width: 100%;
+}
+
+
+// Form Properties 
+
+.formtextColor{
+    color: $black-color;
+}
+.formRoundCorner{
+    @include formRoundCorner();
+}
+
+  /* slide view properties with slide boc view properties */
+  .slideView{
+    border-radius: 5px;
+    background:$whitegraymix-f4f7fa-color;
+    height: 215px;
+  }
+
+.slideBox{
+    @include slideBox();
+}
+
+.recImg{
+    background-image:url(/assets/Rectangle\ 113.png);
+}

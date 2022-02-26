@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+
+// /* 
+// text align position properties labels and contents */
+.textLeftAlignment{
+    text-align: $left-align;
+}
+.textRightAlignment{
+    text-align: $right-align;
+}
+.textCenterAlignment{
+    text-align: $center-align;
+}
+
+// /* property for positioning div elements left, center and right */
+.leftFloat{
+    float: $left-align;
+}
+.rightFloat{
+    float: $right-align;
+}
